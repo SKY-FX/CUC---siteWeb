@@ -1,0 +1,271 @@
+#ToutLeSite
+{
+	display:flex;
+	flex-direction: column;
+
+	flex:6;
+}
+
+.banniere
+{
+	border: 1px solid rgba(0, 0, 0, .5);
+	background-color: rgba(167, 58, 58, 0.2);
+	flex:1;
+	text-align: center;
+	padding:20px;
+	order:0;
+	
+}
+
+body
+{
+	display:flex;
+	background-color: rgba(0,255,255, .1);
+}
+
+h1
+{
+	font-size: 3em;
+	text-align: center;
+	margin:auto;
+}
+
+img
+{
+	margin:auto;
+	border: 2px solid rgba(0, 0, 0, 1);
+	border-radius: 50px;
+}
+
+
+
+h2
+{
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 2px; /*bordure arrondi*/
+	font-size: 1.5em;
+	text-align: center;
+	padding: 10px;
+	
+	
+	width:75%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h3
+{
+	font-size: 1em;
+	text-align: center;
+}
+
+h4
+{
+	font-size: 0.99em;
+	text-align: center;
+	
+	width:75%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h5
+{
+	font-size: 0.95em;
+	text-align: center;
+}
+
+span:hover
+{
+	color:red;
+}
+
+h6
+{
+	font-size: 1em;
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	color:red;
+}
+
+p
+{
+	border: 1px solid rgba(0, 0, 0, .5);
+	border-radius: 10px; /*bordure arrondi*/
+	padding: 15px;
+	color: black; /* ou #FFFFFF ou rgb(250,96,204)  --> RVB*/
+	text-align: left;
+
+	width:75%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a
+{	
+	color:blue; 
+	text-decoration: none;
+	cursor: pointer;
+	transition: transform 2s ease;
+}
+
+a:hover
+{
+	transform: scale(1.1);
+}
+
+
+
+
+h2:hover
+{
+	border: 1px solid rgba(255, 0, 0, .3);
+}
+
+h2
+{
+	text-decoration: none;
+	color:red;
+}
+
+#puces
+{
+	list-style-type: none;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 40px;
+	flex:0;
+	
+}
+
+#_puces
+{
+	list-style-type: none;
+	text-align: center;
+
+	flex:0;
+	
+}
+{
+	list-style-type: none;
+	text-align: center;
+
+	flex:1;
+	
+}
+
+#puces a
+{
+	display:block;
+	padding:10px 0 10px 0;
+	
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.logo 
+{
+	text-align: center;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.video 
+{
+	text-align: center;
+	margin-bottom:50px;
+	margin-top:50px;
+}
+
+.video video
+{
+	height:auto;
+}
+
+.infos
+{	
+   display: flex;
+   justify-content: space-between;
+   margin-top:20px;
+   
+   width: 75%;
+   margin-right: auto;
+   margin-left: auto;
+   flex:0;
+}
+
+#EnTete
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	width: 75%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#EnTete img
+{
+	height:auto;
+}
+
+.trait
+{
+	background-color: rgba(0, 0, 0, .5);
+	height: 1px;
+	margin-top : 10px;
+	
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media screen and (max-width: 800px)
+{
+	#EnTete
+	{
+		flex-direction: column;
+	}
+	
+	h2, h4, p, #puces a, .infos, #EnTete, .trait
+	{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	body
+	{
+		flex-direction: column;
+	}
+
+	.banniere
+	{
+		margin-top:50px;
+		order:1;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	
+}
+
+@media screen and (max-width: 1200px)
+{
+	body
+	{
+		background-color: rgba(0,255,255, .1);
+		
+		
+	}
+}
+
